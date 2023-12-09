@@ -8,11 +8,18 @@
   <title>Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap" rel="stylesheet">
+
 </head>
 <body class="h-screen p-6 font-['Nunito_Sans'] bg-gray-100">
+  <div class="lg:hidden my-2" id="botao">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="38" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
+
+  
   <div class="w-full m-auto h-full flex gap-16">
-    <aside class="hidden lg:flex min-w-[95px] bg-blue-600 h-full rounded-3xl drop-shadow-xl  flex-col items-center py-6">
-      <span class="text-white font-semibold">Dash.io</span>
+    <aside id="menu" class="hidden flex min-w-[95px] bg-blue-600 h-full rounded-3xl drop-shadow-xl flex-col items-center py-6 lg:flex " >
+      
+      <span class="text-white font-semibold">Mirage inc</span>
 
       <nav class="mt-16 flex flex-col gap-8 text-white w-full">
         <a href="home.html" class="hover:opacity-70 flex justify-center relative before:block before:absolute before:w-1 before:h-full before:bg-white before:left-0 before:rounded-lg">
@@ -27,11 +34,6 @@
           </svg>
         </a>
         
-        <!-- <a href="comparation.html" class="flex justify-center hover:opacity-70">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
-            <path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"></path>
-          </svg>
-        </a> -->
       </nav>
 
       <a href="" class="mt-auto">
@@ -45,20 +47,22 @@
 
       <!-- Cabeçalho -->
       <header class=" w-full mt-3 text-[#0D0742]">
-        <h1 class="text-3xl font-bold">
-          Bem vindo!
+        <h1 class="text-3xl font-bold mt-8">
+          Bem vindo ao Mirage inc!
         </h1>
       </header>
 
-      <article class="flex-1 flex items-center p-16">
-        <section class="flex-1">
-          Imagem aqui
+      <article class="sm:flex-1 flex flex-col-reverse items-center px-16 py-10 gap-12 2xl:flex-row">
+        <section class="flex-1 bg-slate-400 rounded-md h-full">
+          <img src="http://www.portaldaeducacao.recife.pe.gov.br/sites/default/files/imagem_noticia_geral/ph-95.jpg" alt="" class="rounded-md w-full h-full">
+          
         </section>
      
         <section class="flex-1 leading-loose text-justify text-lg">
-          <p class="text-[#0D0742] ">
-            Mussum Ipsum, cacilds vidis litro abertis.  Ainda é segunda-feris e já tô sem paciêncis! Atirei o pau no gatis, per gatis num morreus. Manduma pindureta quium dia nois paga. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
-            Segunda-feiris nun dá, eu vô me pirulitá! Copo furadis é disculpa de bebadis, arcu quam euismod magna. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Bota 1 metro de cachacis aí pra viagem!
+          <p class="text-[#0D0742] text-2xl leading-10 ">
+            O Mirage inc foi desenvolvido com a missão de fornecer uma análise abrangente da infraestrutura escolar na região do Recife. Nosso objetivo principal é facilitar a compreensão de informações educacionais relevantes para gestores e demais profissionais interessados.
+            Por meio de um dashboard intuitivo, buscamos oferecer uma visão clara e acessível dos dados do INEP referentes ao ano de 2022, proporcionando uma ferramenta valiosa para a tomada de decisões informadas no campo educacional.
+            Além de possibilitar a visualização dos dados, nosso site oferece a funcionalidade de filtragem, permitindo que os usuários separem as informações de acordo com o tipo de escola, seja ela privada ou pública. Essa capacidade de filtragem visa proporcionar uma análise mais específica e personalizada, atendendo às necessidades individuais dos usuários interessados na diversidade da infraestrutura educacional na região do Recife.
           </p>
           
         </section>
@@ -70,6 +74,11 @@
     </main>
   </div>
   
+
+  <script src="projeto-pi-main/frontend/menu.js">
+    
+  </script>
+
 
 </body>
 </html>

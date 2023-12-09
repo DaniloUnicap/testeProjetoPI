@@ -17,11 +17,15 @@
     <div class="loader" id="loader"></div>
   </div>
 
-  <div class="w-full m-auto h-full flex gap-16 ">
+  <div class="lg:hidden my-2" id="botao">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="38" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
 
-    <!-- Sidebar -->
-    <aside class="hidden lg:flex min-w-[95px] bg-blue-600 h-full rounded-3xl drop-shadow-xl  flex-col items-center py-6">
-      <span class="text-white font-semibold">Dash.io</span>
+  
+  <div class="w-full m-auto h-full flex gap-16">
+    <aside id="menu" class="hidden flex min-w-[95px] bg-blue-600 h-full rounded-3xl drop-shadow-xl flex-col items-center py-6 lg:flex " >
+      
+      <span class="text-white font-semibold">Mirage inc</span>
 
       <nav class="mt-16 flex flex-col gap-8 text-white w-full">
         <a href="/index.html" class="hover:opacity-70 flex justify-center">
@@ -30,12 +34,11 @@
           </svg>
         </a>
         
-        <a href="index.html" class="flex justify-center hover:opacity-70 relative before:block before:absolute before:w-1 before:h-full before:bg-white before:left-0 before:rounded-lg">
+        <a href="#" class="hover:opacity-70 flex justify-center relative before:block before:absolute before:w-1 before:h-full before:bg-white before:left-0 before:rounded-lg">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
             <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"></path>
           </svg>
         </a>
-        
         
       </nav>
 
@@ -49,7 +52,7 @@
     <main class="flex-1 flex flex-col gap-16 overflow-auto">
 
       <!-- Cabeçalho -->
-      <header class="flex items-center justify-around w-full mt-3 gap-8 text-[#0D0742]">
+      <header class="sm:flex flex-col items-center justify-around w-full mt-3 gap-8 text-[#0D0742] md:flex-row">
         
         <h1 class="text-4xl font-bold">
           Dashboard infraestrutura das escolas do Recife
@@ -57,7 +60,7 @@
         
 
         <select name="filtro" id="filtro"
-          class="w-80 h-10 rounded-lg bg-transparent border border-px border-gray-300 px-3 font-semibold"
+          class="w-full sm:w-full h-10 rounded-lg bg-transparent border border-px border-gray-300 px-3 font-semibold md:w-80 lg:w-80"
           onchange="redirectToUrl(this)">
           <option value="" selected disabled hidden>Filtrar</option>
           <option value="volvo" data-url="index" class="bg-gray-300">Todas as escolas</option>
@@ -152,5 +155,6 @@
   <script src="../requisicoes/recs.js"></script>
   <script src="graficos.js"></script>
   <script src="scriptSelect.js"></script>
+  <script src="menu.js"></script>
 </body>
 </html>
