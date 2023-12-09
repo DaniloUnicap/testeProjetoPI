@@ -1,7 +1,7 @@
 // dbQuery.js
 
 async function getDataForSalasChart() {
-  const urlSalas = 'http://localhost:8080/salas';
+  const urlSalas = 'https://projeto-pi-production.up.railway.app/salas';
   const colunaAuditorio = 'temAuditorio';
   const colunaBiblioteca = 'temBiblioteca';
   const colunaLabCiencias = 'temLaboratorioCiencias';
@@ -37,7 +37,7 @@ async function getDataForSalasChart() {
 }
 
 async function getDataForTIChart() {
-  const urlTI = 'http://localhost:8080/ti';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti';
   const colunaTI = 'temComputador';
 
   const computadores = {};
@@ -52,7 +52,7 @@ async function getDataForTIChart() {
 }
 
 async function getDataForTIZeroChart () {
-  const urlTI = 'http://localhost:8080/ti';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti';
   const colunaTI = 'temComputador';
 
   const computadoresZero = {}
@@ -67,7 +67,7 @@ async function getDataForTIZeroChart () {
 }
 
 async function getDataForTINullChart() {
-  const urlTI = 'http://localhost:8080/ti';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti';
   const colunaTI = 'temComputador';
 
   const computadoresNull = {};
@@ -82,7 +82,7 @@ async function getDataForTINullChart() {
 }
 
 async function getDataForAguaChart() {
-  const urlRecursos = 'http://localhost:8080/recursos_basicos';
+  const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos';
   const colunaAgua = 'temAguaPotavel';
 
   const agua = {};
@@ -96,7 +96,7 @@ async function getDataForAguaChart() {
   return agua;
 }
 async function getDataForEnergiaChart() {
-  const urlRecursos = 'http://localhost:8080/recursos_basicos';
+  const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos';
   const colunaEnergia = 'temEnergiaRedePublica';
 
   const energia = {};
@@ -111,7 +111,7 @@ async function getDataForEnergiaChart() {
 }
 
 async function getDataForLixoChart() {
-  const urlLixo = 'http://localhost:8080/lixo_esgoto';
+  const urlLixo = 'https://projeto-pi-production.up.railway.app/lixo_esgoto';
   const colunaLixo = 'temTratamentoLixoSeparacao';
 
   const lixo = {};

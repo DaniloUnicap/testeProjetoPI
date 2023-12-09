@@ -1,7 +1,7 @@
 // dbQuery.js
 
 async function getDataForSalasPrivadasChart() {
-    const urlSalas = 'http://localhost:8080/salas/escolas_privadas';
+    const urlSalas = 'https://projeto-pi-production.up.railway.app/salas/escolas_privadas';
     const colunaAuditorio = 'temAuditorio';
     const colunaBiblioteca = 'temBiblioteca';
     const colunaLabCiencias = 'temLaboratorioCiencias';
@@ -37,7 +37,7 @@ async function getDataForSalasPrivadasChart() {
   }
   
   async function getDataForTIPrivadasChart() {
-    const urlTI = 'http://localhost:8080/ti/escolas_privadas';
+    const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_privadas';
     const colunaTI = 'temComputador';
   
     const computadores = {};
@@ -52,7 +52,7 @@ async function getDataForSalasPrivadasChart() {
   }
   
   async function getDataForTIZeroPrivadasChart () {
-    const urlTI = 'http://localhost:8080/ti/escolas_privadas';
+    const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_privadas';
     const colunaTI = 'temComputador';
   
     const computadoresZero = {}
@@ -67,7 +67,7 @@ async function getDataForSalasPrivadasChart() {
   }
   
   async function getDataForTINullPrivadasChart() {
-    const urlTI = 'http://localhost:8080/ti/escolas_privadas';
+    const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_privadas';
     const colunaTI = 'temComputador';
   
     const computadoresNull = {};
@@ -82,7 +82,7 @@ async function getDataForSalasPrivadasChart() {
   }
   
   async function getDataForAguaPrivadasChart() {
-    const urlRecursos = 'http://localhost:8080/recursos_basicos/escolas_privadas';
+    const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos/escolas_privadas';
     const colunaAgua = 'temAguaPotavel';
   
     const agua = {};
@@ -96,7 +96,7 @@ async function getDataForSalasPrivadasChart() {
     return agua;
   }
   async function getDataForEnergiaPrivadasChart() {
-    const urlRecursos = 'http://localhost:8080/recursos_basicos/escolas_privadas';
+    const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos/escolas_privadas';
     const colunaEnergia = 'temEnergiaRedePublica';
   
     const energia = {};
@@ -111,7 +111,7 @@ async function getDataForSalasPrivadasChart() {
   }
   
   async function getDataForLixoPrivadasChart() {
-    const urlLixo = 'http://localhost:8080/lixo_esgoto/escolas_privadas';
+    const urlLixo = 'https://projeto-pi-production.up.railway.app/lixo_esgoto/escolas_privadas';
     const colunaLixo = 'temTratamentoLixoSeparacao';
   
     const lixo = {};

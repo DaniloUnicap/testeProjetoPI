@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const url = 'http://localhost:8080/salas/escolas_publicas';
+const url = 'https://projeto-pi-production.up.railway.app/salas/escolas_publicas';
 const colunaDesejada = 'temAuditorio'; // Substitua pelo nome da coluna desejada
 
 async function getRepos() {

@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         y: {
           beginAtZero: true
         }
-      }
+      },
+      maintainAspectRatio: false, 
     }
   });
   document.getElementById("spin").style.display = "none";
@@ -67,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
           y: {
             beginAtZero: true
           }
-        }
+        },
+        maintainAspectRatio: false, 
       }
     });
     document.getElementById("spin2").style.display = "none";
@@ -106,7 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
           y: {
             beginAtZero: true
           }
-        }
+        },
+        maintainAspectRatio: false, 
       }
     });
     document.getElementById("spin3").style.display = "none";

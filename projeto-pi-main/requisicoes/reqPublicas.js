@@ -1,7 +1,7 @@
 // dbQuery.js
 
 async function getDataForSalasPublicasChart() {
-  const urlSalas = 'http://localhost:8080/salas/escolas_publicas';
+  const urlSalas = 'https://projeto-pi-production.up.railway.app/salas/escolas_publicas';
   const colunaAuditorio = 'temAuditorio';
   const colunaBiblioteca = 'temBiblioteca';
   const colunaLabCiencias = 'temLaboratorioCiencias';
@@ -37,7 +37,7 @@ async function getDataForSalasPublicasChart() {
 }
 
 async function getDataForTIPublicasChart() {
-  const urlTI = 'http://localhost:8080/ti/escolas_publicas';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_publicas';
   const colunaTI = 'temComputador';
 
   const computadores = {};
@@ -52,7 +52,7 @@ async function getDataForTIPublicasChart() {
 }
 
 async function getDataForTIZeroPublicasChart () {
-  const urlTI = 'http://localhost:8080/ti/escolas_publicas';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_publicas';
   const colunaTI = 'temComputador';
 
   const computadoresZero = {}
@@ -67,7 +67,7 @@ async function getDataForTIZeroPublicasChart () {
 }
 
 async function getDataForTINullPublicasChart() {
-  const urlTI = 'http://localhost:8080/ti/escolas_publicas';
+  const urlTI = 'https://projeto-pi-production.up.railway.app/ti/escolas_publicas';
   const colunaTI = 'temComputador';
 
   const computadoresNull = {};
@@ -82,7 +82,7 @@ async function getDataForTINullPublicasChart() {
 }
 
 async function getDataForAguaPublicasChart() {
-  const urlRecursos = 'http://localhost:8080/recursos_basicos/escolas_publicas';
+  const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos/escolas_publicas';
   const colunaAgua = 'temAguaPotavel';
 
   const agua = {};
@@ -96,7 +96,7 @@ async function getDataForAguaPublicasChart() {
   return agua;
 }
 async function getDataForEnergiaPublicasChart() {
-  const urlRecursos = 'http://localhost:8080/recursos_basicos/escolas_publicas';
+  const urlRecursos = 'https://projeto-pi-production.up.railway.app/recursos_basicos/escolas_publicas';
   const colunaEnergia = 'temEnergiaRedePublica';
 
   const energia = {};
@@ -111,7 +111,7 @@ async function getDataForEnergiaPublicasChart() {
 }
 
 async function getDataForLixoPublicasChart() {
-  const urlLixo = 'http://localhost:8080/lixo_esgoto/escolas_publicas';
+  const urlLixo = 'https://projeto-pi-production.up.railway.app/lixo_esgoto/escolas_publicas';
   const colunaLixo = 'temTratamentoLixoSeparacao';
 
   const lixo = {};

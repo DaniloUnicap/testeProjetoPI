@@ -1,0 +1,41 @@
+canvas {
+    /* background-color: black; */
+    height: 400px;
+    width: 100%;
+ }
+
+ .relative {
+   position: relative;
+ }
+
+ #pieChart {
+   width: 100%;
+ }
+ #canvasContainer, #canvasContainer2, #canvasContainer3  {
+   position: relative;
+ }
+
+ #spin, #spin2, #spin3 {
+   border: 8px solid #3498db; /* Cor do círculo */
+   border-top: 8px solid #f2f2f2; /* Cor de fundo do loading */
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   animation: spin 1s linear infinite;
+   position: absolute;
+   top: 50%;
+left: 50%;
+ }
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ #loadingText, #loadingText2 {
+   font-size: 20px;
+ }
