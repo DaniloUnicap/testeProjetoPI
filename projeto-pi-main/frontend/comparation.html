@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen p-6 font-['Nunito_Sans'] bg-gray-100">
+  <div class="w-full m-auto h-full flex gap-16 ">
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:flex min-w-[95px] bg-blue-600 h-full rounded-3xl drop-shadow-xl  flex-col items-center py-6">
+      <span class="text-white font-semibold">Dash.io</span>
+
+      <nav class="mt-16 flex flex-col gap-8 text-white w-full">
+        <a href="home.html" class="hover:opacity-70 flex justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
+            <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+          </svg>
+        </a>
+        
+        <a href="index.html" class="flex justify-center hover:opacity-70">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
+            <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"></path>
+          </svg>
+        </a>
+        
+        <a href="comparation.html" class="flex justify-center hover:opacity-70 relative before:block before:absolute before:w-1 before:h-full before:bg-white before:left-0 before:rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
+            <path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"></path>
+          </svg>
+        </a>
+      </nav>
+
+      <a href="" class="mt-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" viewBox="0 0 256 256">
+          <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path>
+        </svg>
+      </a>
+    </aside>
+
+    <main class="flex-1 flex flex-col gap-16 overflow-auto">
+
+      <!-- Cabeçalho -->
+      <header class="flex items-center justify-between w-full mt-3 gap-8 text-[#0D0742]">
+        <h1 class="text-3xl font-bold">
+          Comparação
+        </h1>
+        
+        <label for="" class="w-full max-w-[787px] h-[58px] bg-gray-200 rounded-2xl hidden md:flex items-center px-5">
+          <input 
+            type="text" 
+            placeholder="Pesquisar"
+            class="bg-transparent flex-1 focus:outline-none"
+          >
+
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256">
+              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+            </svg>
+          </button>
+        </label>
+      </header>
+
+      <article class="flex-1 flex flex-col gap-8">
+        
+        <section class="flex items-center justify-center gap-8">
+          <select
+            name="filtro"
+            id="filtro"
+            class="w-80 h-10 rounded-lg bg-transparent border border-px border-gray-300 px-3 font-semibold"
+          >
+            <option value="" selected disabled hidden>Escola 1</option>
+            <option value="volvo" class="bg-gray-300">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+
+          <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#0D0742" viewBox="0 0 256 256">
+              <path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"></path>
+            </svg>
+          </i>
+
+          <select
+            name="filtro"
+            id="filtro"
+            class="w-80 h-10 rounded-lg bg-transparent border border-px border-gray-300 px-3 font-semibold"
+          >
+            <option value="" selected disabled hidden>Escola 2</option>
+            <option value="volvo" class="bg-gray-300">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </section>
+        
+        <section class="bg-white rounded-lg box-shadow-xl flex-1">
+          <canvas id="barChart"></canvas>
+        </section>
+      </article>
+
+      <footer class="text-center text-gray-500 w-full">
+        Dash.io@ Todos Direitos Reservados 2023
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
