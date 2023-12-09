@@ -84,11 +84,14 @@
         </h1>
         
 
-        <div class="flex gap-8">
-          <a href="#" class="text-xl font-bold  text-blue-600">Todas as escolas</a>
-          <a href="indexPublicas.html" class="text-xl font-bold hover:text-blue-500">Escolas publicas</a>
-          <a href="indexPrivadas.html" class="text-xl font-bold hover:text-blue-500">Escolas privadas</a>
-        </div>
+        <select name="filtro" id="filtro"
+          class="w-80 h-10 rounded-lg bg-transparent border border-px border-gray-300 px-3 font-semibold"
+          onchange="redirectToUrl(this)">
+          <option value="" selected disabled hidden>Filtrar</option>
+          <option value="volvo" data-url="index" class="bg-gray-300">Todas as escolas</option>
+          <option value="saab" data-url="indexPublicas">Escolas públicas</option>
+          <option value="mercedes" data-url="indexPrivadas">Escolas privadas</option>
+        </select>
       </header>
 
       <article class="flex-1 grid md:grid-cols-[200px_1fr] gap-4">
@@ -184,5 +187,6 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="../requisicoes/recs.js"></script>
   <script src="graficos.js"></script>
+  <script src="scriptSelect.js"></script>
 </body>
 </html>
